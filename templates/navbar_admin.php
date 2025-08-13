@@ -39,7 +39,7 @@
         </a>
         <a class="sidebar-item <?php echo ($current_page == 'manage_users') ? 'active' : ''; ?>" href="manage_users.php">
             <i class="fas fa-users-cog"></i>
-            <span>Manage Users</span>
+            <span>Manage </span>
         </a>
 
         <hr class="sidebar-divider">
@@ -102,7 +102,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?php echo ($current_page == 'manage_users') ? 'active text-white' : 'text-white-50'; ?> fw-medium px-3 rounded-pill" href="manage_users.php">
-                        <i class="fas fa-users-cog me-2"></i>Manage Users
+                        <i class="fas fa-users-cog me-2"></i>Manage Alumni
                     </a>
                 </li>
             </ul>

@@ -15,14 +15,10 @@ include_once '../../templates/navbar_admin.php'; //navbar for alumini
 ?>
 
 <!-- Your page content here -->
-<div class="container-fluid py-4">
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="card bg-gradient-custom text-white shadow-sm border-0 rounded-3">
-                <!-- Dashboard content -->
-            </div>
-        </div>
-    </div>
-</div>
+<!-- -------------------------------------------------------------------------------------- -->
+<?php include '../../templates/verify_alumni.php'; ?>
+<script src="../../assets/js/verify_alumni.js"></script>
+<!-- -------------------------------------------------------------------------------------- -->
+
 
 <?php include_once '../../templates/footer.php'; ?>

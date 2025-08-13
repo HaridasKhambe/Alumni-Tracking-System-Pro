@@ -4,14 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Send Notice Button</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-     <!-- Bootstrap JS Bundle -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
 <!-- templates/alumni_filter.php -->
@@ -116,7 +108,7 @@
             <!-- Results Table -->
             <div class="table-responsive">
                 <table class="table table-striped table-hover">
-                    <thead >
+                    <thead>
                         <tr>
                             <th>PRN No</th>
                             <th>Name</th>
@@ -126,30 +118,19 @@
                             <th>Employment</th>
                             <th>Company</th>
                             <th>Email</th>
-                            <th>Action</th>
+                            <th class="action-buttons">Action</th>
+                            
                         </tr>
                     </thead>
                     <tbody id="resultsTableBody">
                         <tr>
-                            <td colspan="8" class="text-center py-4">
+                            <td colspan="9" class="text-center py-4">
                                 <i class="fas fa-search fa-2x text-muted mb-2"></i>
                                 <p class="text-muted">Use filters above to search alumni</p>
                             </td>
                         </tr>
                     </tbody>
-                     <thead class="harry">
-                        <tr>
-                            <th>PRN No</th>
-                            <th>Name</th>
-                            <th>Branch</th>
-                            <th>Passout Year</th>
-                            <th>Phone</th>
-                            <th>Employment</th>
-                            <th>Company</th>
-                            <th>Email</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
+    
                 </table>
             </div>
             
@@ -270,4 +251,6 @@
     border-color: #86b7fe;
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
+
+
 </style>

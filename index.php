@@ -87,7 +87,7 @@
         .divider::before {
             content: '';
             position: absolute;
-            top: 10%;
+            top: 50%;
             left: 0;
             right: 0;
             height: 1px;
@@ -99,6 +99,7 @@
             padding: 0 1rem;
             color: #666;
             z-index: 1;
+            position: relative;
         }
         
         .register-section {

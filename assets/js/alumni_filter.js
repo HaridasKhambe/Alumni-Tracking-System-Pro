@@ -1,3 +1,4 @@
+
 // assets/js/alumni_filter.js
 class AlumniFilter {
     constructor() {
@@ -139,7 +140,7 @@ class AlumniFilter {
         if (data.length === 0) {
             this.resultsBody.innerHTML = `
                 <tr>
-                    <td colspan="8" class="text-center py-4">
+                    <td colspan="9" class="text-center py-4">
                         <i class="fas fa-users fa-2x text-muted mb-2"></i>
                         <p class="text-muted">No alumni found matching your criteria</p>
                     </td>
@@ -150,7 +151,7 @@ class AlumniFilter {
         
         const rows = data.map(alumni => `
             <tr>
-                <td><strong>${alumni.prn_no}</strong></td>
+                <td><strong>${alumni.prn}</strong></td>
                 <td>${alumni.first_name} ${alumni.last_name}</td>
                 <td><span class="badge bg-primary">${alumni.branch}</span></td>
                 <td>${alumni.passout_year}</td>
@@ -162,16 +163,23 @@ class AlumniFilter {
                 </td>
                 <td>${alumni.company_name || '<em class="text-muted">Not specified</em>'}</td>
                 <td>${alumni.email}</td>
-                <td>
+                <td class="action-buttons">
                 <button class="btn btn-sm btn-outline-primary sendNoticeBtn" 
                     data-id="${alumni.user_id}" 
                     data-name="${alumni.first_name} ${alumni.last_name}">
-                    <i class="fas fa-envelope"></i> Send
+                    <i class="fas fa-envelope"></i>Notice
                 </button>
-            </td>
+                <button class="btn btn-sm btn-outline-success me-1" onclick="" title="Edit User Info">
+                    <i class="fas fa-edit"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-danger" onclick="" title="Delete User">
+                    <i class="fas fa-trash"></i>
+                </button>
+                </td>
             </tr>
         `).join('');
-        
+
+    
         this.resultsBody.innerHTML = rows;
 
          // Attach event listeners for send buttons

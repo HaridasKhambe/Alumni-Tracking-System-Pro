@@ -30,8 +30,8 @@
             <span>Manage Admins</span>
         </a>
         <a class="sidebar-item <?php echo ($current_page == 'analytics') ? 'active' : ''; ?>" href="analytics.php">
-            <i class="fas fa-chart-bar"></i>
-            <span>Analytics</span>
+            <i class="fas fa-users-cog"></i>
+            <span>Manage Alumni</span>
         </a>
 
         <hr class="sidebar-divider">
@@ -83,7 +83,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?php echo ($current_page == 'analytics') ? 'active text-white' : 'text-white-50'; ?> fw-medium px-3 rounded-pill" href="analytics.php">
-                        <i class="fas fa-chart-bar me-2"></i>Analytics
+                        <i class="fas fa-users-cog me-2"></i>Manage Alumni
                     </a>
                 </li>
             </ul>
