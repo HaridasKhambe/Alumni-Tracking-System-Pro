@@ -151,7 +151,7 @@ class AlumniFilter {
         
         const rows = data.map(alumni => `
             <tr>
-                <td><strong>${alumni.prn}</strong></td>
+                <td><strong>${alumni.prn_no}</strong></td>
                 <td>${alumni.first_name} ${alumni.last_name}</td>
                 <td><span class="badge bg-primary">${alumni.branch}</span></td>
                 <td>${alumni.passout_year}</td>
