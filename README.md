@@ -66,7 +66,7 @@ This project was built with a **modular REST API architecture**, making it **sec
 ![Directorate Alumni Search](OUTPUT/directorate_alumni_search.png)
 
 **Other Responsive UI:**
-!Alumni Notices](OUTPUT/alumni_notices_resp.png.png)
+[!Alumni Notices](OUTPUT/alumni_notices_resp.png.png)
 
 ---
 
