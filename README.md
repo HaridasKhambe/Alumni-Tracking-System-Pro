@@ -30,8 +30,10 @@ This project was built with a **modular REST API architecture**, making it **sec
 **UI Preview:**
 ![Alumni Register](OUTPUT/alumni_register.png)
 ![Alumni Login](OUTPUT/alumni_login.png)
-![Alumni Events](OUTPUT/alumni_events.png)
-![Alumni Notices](OUTPUT/alumni_notices.png)
+![Alumni Events](OUTPUT/alumni_events1.png)
+![Alumni Events](OUTPUT/alumni_events2.png)
+![Alumni Notices](OUTPUT/alumni_notices1.png)
+![Alumni Notices](OUTPUT/alumni_notices2.png)
 ![Alumni Profile Update](OUTPUT/alumni_profile_update.png)
 
 ---
@@ -47,7 +49,8 @@ This project was built with a **modular REST API architecture**, making it **sec
 ![Admin Login](OUTPUT/admin_login.png)
 ![Manage Alumni](OUTPUT/admin_manage_alumni.png)
 ![Manage Notices](OUTPUT/admin_manage_notices.png)
-![Manage Events](OUTPUT/admin_manage_events.png)
+![Manage Events](OUTPUT/admin_manage_events1.png)
+![Manage Events](OUTPUT/admin_manage_events2.png)
 ![Verify Alumni](OUTPUT/admin_verify_alumni.png)
 
 ---
@@ -61,6 +64,9 @@ This project was built with a **modular REST API architecture**, making it **sec
 ![Directorate Login](OUTPUT/directorate_login.png)
 ![Manage Admins](OUTPUT/directorate_manage_admins.png)
 ![Directorate Alumni Search](OUTPUT/directorate_alumni_search.png)
+
+**Other Responsive UI:**
+!Alumni Notices](OUTPUT/alumni_notices_resp.png.png)
 
 ---
 
