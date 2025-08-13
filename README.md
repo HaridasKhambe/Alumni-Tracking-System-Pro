@@ -1,35 +1,20 @@
-# Alumni Management Platform
+# 🎓 Alumni Tracking & Management System (ATS)
 
-A **responsive web-based Alumni Management System** designed to streamline alumni data management, event sharing, and targeted notices.  
-This system supports **multi-role access**: **Alumni**, **Admin**, and **Directorate** — each with tailored features and access permissions.  
+## 📌 Overview
+The **Alumni Tracking & Management System (ATS)** is a **multi-role, role-based access control (RBAC)** platform designed to connect **Alumni, College Administrators, and Directorate Officials** in one centralized system.  
+It enables seamless **event management, notice sharing, alumni verification, and networking** via a **single unified login** with automatic role detection.
 
-Built with a **single login page** that detects the user’s role automatically. Only Alumni can self-register; Admin accounts are created by Directorate.
+This project was built with a **modular REST API architecture**, making it **secure, scalable, and easily extensible** for future integrations (e.g., mobile apps, third-party platforms).
 
 ---
 
 ## 🚀 Key Features
-- Multi-role access: **Alumni**, **Admin**, **Directorate**
-- Advanced alumni search & filters (by name, PRN, branch, year, employment status, company)
-- Event management (create, update, delete)
-- Notices with acceptance/rejection tracking
-- REST API backend with secure authentication
-- Role-based access control
-- Optimized database with **indexes** for faster queries
-
----
-
-## 🛠 Tech Stack
-**Frontend:**
-- HTML5, CSS3, JavaScript (Bootstrap for UI)
-- Font Awesome icons
-
-**Backend:**
-- PHP (REST API-based structure)
-- MySQL (with indexing and foreign keys)
-
-**Authentication:**
-- Session-based login system
-- Role auto-detection
+ **REST API** – Decoupled front-end & back-end communication
+- **Role-Based Access Control (RBAC)** – Restricts actions based on user type
+- **SQL Optimization** –  Optimized database with **indexes** for faster queries
+- **Security** – Prepared statements, session-based authentication
+- **Advanced Alumni Search** – Multi-parameter filtering, search & filters (by name, PRN, branch, year, employment status, company)
+- **MVC-like Modular Structure** – Separate logic for API, UI, and role-specific modules
 
 ---
 
@@ -45,8 +30,10 @@ Built with a **single login page** that detects the user’s role automatically.
 **UI Preview:**
 ![Alumni Register](OUTPUT/alumni_register.png)
 ![Alumni Login](OUTPUT/alumni_login.png)
-![Alumni Events](OUTPUT/alumni_events.png)
-![Alumni Notices](OUTPUT/alumni_notices.png)
+![Alumni Events](OUTPUT/alumni_events1.png)
+![Alumni Events](OUTPUT/alumni_events2.png)
+![Alumni Notices](OUTPUT/alumni_notices1.png)
+![Alumni Notices](OUTPUT/alumni_notices2.png)
 ![Alumni Profile Update](OUTPUT/alumni_profile_update.png)
 
 ---
@@ -62,7 +49,8 @@ Built with a **single login page** that detects the user’s role automatically.
 ![Admin Login](OUTPUT/admin_login.png)
 ![Manage Alumni](OUTPUT/admin_manage_alumni.png)
 ![Manage Notices](OUTPUT/admin_manage_notices.png)
-![Manage Events](OUTPUT/admin_manage_events.png)
+![Manage Events](OUTPUT/admin_manage_events1.png)
+![Manage Events](OUTPUT/admin_manage_events2.png)
 ![Verify Alumni](OUTPUT/admin_verify_alumni.png)
 
 ---
@@ -77,6 +65,9 @@ Built with a **single login page** that detects the user’s role automatically.
 ![Manage Admins](OUTPUT/directorate_manage_admins.png)
 ![Directorate Alumni Search](OUTPUT/directorate_alumni_search.png)
 
+**Other Responsive UI:**
+!Alumni Notices](OUTPUT/alumni_notices_resp.png.png)
+
 ---
 
 ## 🔗 API Endpoints Overview
@@ -88,6 +79,43 @@ Built with a **single login page** that detects the user’s role automatically.
 - `api/manage_events.php` – Event CRUD for Admin
 - `api/alumni_profile.php` – Update alumni profile
 - `api/verify_alumni.php` – Verify alumni (Admin)
+---
+
+## 📂 Project Structure
+
+```plaintext
+project-root/
+├── api/                # Backend API Endpoints (REST)
+├── assets/             # Static assets (images, JS scripts)
+│   └── js/             # Frontend JS logic
+├── config/             # Database & Auth Configurations
+├── modules/            # Role-specific PHP modules
+│   ├── admin/
+│   ├── alumni/
+│   ├── auth/
+│   └── directorate/
+├── templates/          # Reusable UI Components
+└── index.php           # Unified Login Entry Point
+```
+
+## 🛠 Tech Stack
+
+### **Frontend**
+- **HTML5** – Structure & semantic layout
+- **CSS3** – Styling & responsive UI
+- **JavaScript (Vanilla)** – Interactivity & form validation
+- **AJAX** – Asynchronous data loading
+
+### **Backend**
+- **PHP (Core)** – Server-side logic & role-based authentication
+- **REST API Architecture** – Modular API endpoints with JSON responses
+
+### **Database**
+- **MySQL** – Relational database with indexed search & foreign key constraints
+
+### **Authentication & Authorization**
+- **PHP Sessions** – Secure login state management
+- **Role-Based Access Control (RBAC)** – Automatic role detection & dashboard redirection
 
 ---
 
