@@ -173,7 +173,7 @@ Feel free to fork this repository and submit a pull request.
 **Project Maintainer:** [Haridas Khambe]  
 📧 Email: yourname@example.com  
 💼 LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/haridas-khambe-aa650926b/)  
-🌐 Portfolio: [click here](hhttps://github.com/HaridasKhambe)  
+🌐 Portfolio:   
 
 ---
 
