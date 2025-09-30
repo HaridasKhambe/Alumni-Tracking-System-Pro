@@ -104,11 +104,11 @@ project-root/
 ### **Frontend**
 - **HTML5** – Structure & semantic layout
 - **CSS3** – Styling & responsive UI
-- **JavaScript (Vanilla)** – Interactivity & form validation
+- **JavaScript ** – Interactivity & form validation
 - **AJAX** – Asynchronous data loading
 
 ### **Backend**
-- **PHP (Core)** – Server-side logic & role-based authentication
+- **PHP** – Server-side logic & role-based authentication
 - **REST API Architecture** – Modular API endpoints with JSON responses
 
 ### **Database**
