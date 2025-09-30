@@ -104,7 +104,7 @@ project-root/
 ### **Frontend**
 - **HTML5** – Structure & semantic layout
 - **CSS3** – Styling & responsive UI
-- **JavaScript ** – Interactivity & form validation
+- **JavaScript** – Interactivity & form validation
 - **AJAX** – Asynchronous data loading
 
 ### **Backend**
