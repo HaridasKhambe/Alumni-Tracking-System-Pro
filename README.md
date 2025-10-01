@@ -65,8 +65,9 @@ This project was built with a **modular REST API architecture**, making it **sec
 ![Manage Admins](OUTPUT/directorate_manage_admins.png)
 ![Directorate Alumni Search](OUTPUT/directorate_alumni_search.png)
 
+---
 **Other Responsive UI:**
-!Alumni Notices](OUTPUT/alumni_notices_resp.png.png)
+![Alumni Notices](OUTPUT/alumni_notices_resp.png)
 
 ---
 
@@ -103,11 +104,11 @@ project-root/
 ### **Frontend**
 - **HTML5** – Structure & semantic layout
 - **CSS3** – Styling & responsive UI
-- **JavaScript (Vanilla)** – Interactivity & form validation
+- **JavaScript** – Interactivity & form validation
 - **AJAX** – Asynchronous data loading
 
 ### **Backend**
-- **PHP (Core)** – Server-side logic & role-based authentication
+- **PHP** – Server-side logic & role-based authentication
 - **REST API Architecture** – Modular API endpoints with JSON responses
 
 ### **Database**
@@ -169,10 +170,10 @@ Feel free to fork this repository and submit a pull request.
 
 ## 📬 Contact
 
-**Project Maintainer:** [Your Name]  
-📧 Email: yourname@example.com  
-💼 LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/haridas-khambe-aa650926b/)  
-🌐 Portfolio: [yourwebsite.com](hhttps://github.com/HaridasKhambe)  
+**Project Maintainer:** [Haridas Khambe]  
+📧 Email: haridaskhambe2003@gmail.com 
+💼 LinkedIn: [linkedin.com/in/haridas-khambe](https://www.linkedin.com/in/haridas-khambe-aa650926b/)  
+🌐 Portfolio:   
 
 ---
 
