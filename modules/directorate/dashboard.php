@@ -14,8 +14,7 @@ include_once '../../templates/header.php'; //navbar global style
 include_once '../../templates/navbar_directorate.php'; //navbar for alumini
 ?>
 
-<!-- Your page content here -->
-
+<!-- page content here -->
 
 
 <?php include_once '../../templates/footer.php'; ?>

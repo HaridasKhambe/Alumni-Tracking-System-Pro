@@ -252,7 +252,7 @@
             `;
         }
 
-        // Check for URL parameters (success/error messages)
+        // Check for URL parameters & then show(success/error messages)
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.has('registered')) {
             showMessage('Registration successful! Your account is pending approval.', 'success');

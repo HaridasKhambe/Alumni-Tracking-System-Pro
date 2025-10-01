@@ -10,7 +10,7 @@ $page_title = "Admin Dashboard - ATS";
 $current_page = "dashboard";
 
 // Include templates
-include_once '../../templates/header.php'; //navbar global style
+include_once '../../templates/header.php'; //navbar css
 include_once '../../templates/navbar_admin.php'; //navbar for alumini
 ?>
 

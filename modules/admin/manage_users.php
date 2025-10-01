@@ -14,12 +14,11 @@ include_once '../../templates/header.php'; //navbar global style
 include_once '../../templates/navbar_admin.php'; //navbar for alumini
 ?>
 
-<!-- Your page content here -->
+<!-- page content here -->
 
 <!-- -------------------------------------------------------------------------------------- -->
 <?php include '../../templates/alumni_filter.php'; ?>
 <script src="../../assets/js/alumni_filter.js"></script>
 <!-- -------------------------------------------------------------------------------------- -->
-
 
 <?php include_once '../../templates/footer.php'; ?>

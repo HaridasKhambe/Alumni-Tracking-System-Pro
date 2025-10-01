@@ -1,4 +1,4 @@
-// assets/js/alumni_events.js
+
 class AlumniEvents {
     constructor() {
         this.searchTimeout = null;
@@ -57,6 +57,7 @@ class AlumniEvents {
                 limit: 50
             });
             
+            // api like calling.............
             const response = await fetch(`../../api/alumni_events.php?${params}`);
             const result = await response.json();
             

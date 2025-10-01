@@ -10,8 +10,8 @@ $page_title = "Admin Dashboard - ATS";
 $current_page = "manage_notices";
 
 // Include templates
-include_once '../../templates/header.php'; //navbar global style
-include_once '../../templates/navbar_admin.php'; //navbar for alumini
+include_once '../../templates/header.php'; //navbar css style
+include_once '../../templates/navbar_admin.php'; //navbar for admin
 ?>
 
 

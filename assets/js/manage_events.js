@@ -210,7 +210,7 @@ class EventManagement {
     
     async getEventById(eventId) {
         // Simple approach: find from current loaded data
-        // In a more complex app, you might make a separate API call
+        // In a more complex app, we might make a separate API call
         const tableRows = this.resultsBody.querySelectorAll('tr');
         for (let row of tableRows) {
             const editBtn = row.querySelector(`[onclick*="${eventId}"]`);

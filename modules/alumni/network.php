@@ -3,14 +3,14 @@ session_start();
 
 // make sure that user is set & role is correct
 require_once '../../config/auth_helper.php';
-requireRole('alumni');
+requireRole('alumni'); 
 
 // Page configuration
 $page_title = "Alumni Dashboard - ATS";
 $current_page = "network";
 
 // Include templates
-include_once '../../templates/header.php'; //navbar global style
+include_once '../../templates/header.php'; //gloabl nav
 include_once '../../templates/navbar_alumni.php'; //navbar for alumini
 ?>
 

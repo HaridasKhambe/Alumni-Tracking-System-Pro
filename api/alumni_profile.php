@@ -3,7 +3,7 @@ session_start();
 header('Content-Type: application/json');
 require_once '../config/database.php';
 
-// Check if user is logged in
+// Check user is logged in
 if (!isset($_SESSION['user_id'])) {
     http_response_code(401);
     echo json_encode(['success' => false, 'message' => 'Unauthorized']);
@@ -15,7 +15,7 @@ $action = $_GET['action'] ?? $_POST['action'] ?? '';
 
 try {
     if ($_SERVER['REQUEST_METHOD'] === 'GET' && $action === 'get_profile') {
-        // Get user profile data
+        // Get user profile...................... 
         $query = "SELECT u.email, a.prn_no, a.first_name, a.last_name, a.branch, 
                          a.passout_year, a.phone, a.employment_status, a.company_name 
                   FROM users u 

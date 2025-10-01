@@ -123,7 +123,7 @@ unset($_SESSION['errors']);
                     <p class="text-muted">Join our alumni network and stay connected</p>
                 </div>
 
-                <!-- Error/Success Messages -->
+                <!-- here is: Error/Success Messages -->
                 <div id="message-area">
                     <?php if (!empty($success_message)): ?>
                             <div class="alert alert-success"><?= htmlspecialchars($success_message) ?></div>
@@ -444,7 +444,7 @@ unset($_SESSION['errors']);
                 showMessage('Registering...', 'info');
 
                 try {
-                    // FIX 1: Correct the URL - remove the leading slash before http
+                    
                     const res = await fetch('../../api/auth.php?action=register', {
                         method: 'POST',
                         headers: { 
@@ -452,10 +452,10 @@ unset($_SESSION['errors']);
                             'Accept': 'application/json'
                         },
                         body: JSON.stringify(payload)
-                        // FIX 2: Remove credentials for now to avoid CORS issues
+                      
                     });
 
-                    // FIX 3: Check if response is actually JSON
+                    // Check if response is actually JSON
                     const contentType = res.headers.get('content-type');
                     if (!contentType || !contentType.includes('application/json')) {
                         throw new Error('Server did not return JSON response');

@@ -92,15 +92,15 @@ class AlumniFilter {
         });
     }
     
-    clearFilters() {
-        this.searchInput.value = '';
-        this.branchFilter.value = '';
-        this.employmentFilter.value = '';
-        this.yearFilter.value = '';
-        this.companyFilter.value = '';
-        this.currentPage = 1;
-        this.loadData();
-    }
+        clearFilters() {
+            this.searchInput.value = '';
+            this.branchFilter.value = '';
+            this.employmentFilter.value = '';
+            this.yearFilter.value = '';
+            this.companyFilter.value = '';
+            this.currentPage = 1;
+            this.loadData();
+        }
     
     async loadData() {
         try {
@@ -117,7 +117,7 @@ class AlumniFilter {
                 limit: this.currentLimit
             });
             
-            // Make API call
+            //API call
             const response = await fetch(`../../api/alumni_search.php?${params}`);
             const result = await response.json();
             
@@ -262,14 +262,14 @@ document.getElementById('sendNoticeForm').addEventListener('submit', async funct
         const result = await response.json();
 
         if (result.success) {
-            alert('✅ Notice sent successfully!');
+            alert('Notice sent successfully!');
             bootstrap.Modal.getInstance(document.getElementById('sendNoticeModal')).hide();
         } else {
-            alert('❌ Error: ' + (result.error || 'Failed to send notice'));
+            alert('Error: ' + (result.error || 'Failed to send notice'));
         }
     } catch (err) {
         console.error(err);
-        alert('❌ Network error.');
+        alert('Network error.');
     }
 });
 

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// make sure that user is set & role is correct
+// making sure........ that user is set & role is correct
 require_once '../../config/auth_helper.php';
 requireRole('alumni');
 
@@ -9,12 +9,12 @@ requireRole('alumni');
 $page_title = "Alumni Dashboard - ATS";
 $current_page = "events";
 
-// Include templates
+// Adding Reusable templates
 include_once '../../templates/header.php'; //navbar global style
 include_once '../../templates/navbar_alumni.php'; //navbar for alumini
 ?>
 
-<!-- templates/alumni_events.php -->
+<!-- use .... templates/alumni_events.php -->
 <script src="../../assets/js/alumni_events.js"></script>
 <!-- -------------------------------------------------------------------------------------------------- -->
 <div class="container-fluid p-4">

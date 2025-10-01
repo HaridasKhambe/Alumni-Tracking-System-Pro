@@ -1,5 +1,5 @@
 <?php
-// api/events.php
+
 header('Content-Type: application/json');
 require_once '../config/database.php';
 session_start();

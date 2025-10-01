@@ -14,7 +14,7 @@ include_once '../../templates/header.php'; //navbar global style
 include_once '../../templates/navbar_alumni.php'; //navbar for alumini
 ?>
 
-<!-- Your page content here -->
+<!-- main page content -->
 <div class="container-fluid p-4">
     <div class="row">
        
@@ -341,7 +341,7 @@ class NoticesManager {
     }
 }
 
-// Initialize when DOM is loaded
+// Initializing.............. when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     new NoticesManager();
 });

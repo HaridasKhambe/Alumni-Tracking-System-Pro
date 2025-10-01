@@ -1,5 +1,5 @@
 <?php
-// api/manage_admins.php
+
 header('Content-Type: application/json');
 require_once '../config/database.php';
 session_start();
@@ -97,6 +97,7 @@ function handleGetAdmins($pdo) {
     }
 }
 
+// inserting new admins ................
 function handleAddAdmin($pdo) {
     $input = json_decode(file_get_contents('php://input'), true);
     $email = trim($input['email'] ?? '');

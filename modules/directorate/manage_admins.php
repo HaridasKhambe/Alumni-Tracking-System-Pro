@@ -10,11 +10,11 @@ $page_title = "Directorate Dashboard - ATS";
 $current_page = "manage_admins";
 
 // Include templates
-include_once '../../templates/header.php'; //navbar global style
+include_once '../../templates/header.php'; //navbar global scss tyle
 include_once '../../templates/navbar_directorate.php'; //navbar for alumini
 ?>
 
-<!-- Your page content here -->
+<!--  this.......... page content here -->
 <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
 <?php include '../../templates/manage_admins.php'; ?>
 <script src="../../assets/js/manage_admins.js"></script>

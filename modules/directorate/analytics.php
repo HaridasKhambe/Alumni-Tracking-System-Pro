@@ -10,7 +10,7 @@ $page_title = "Directorate Dashboard - ATS";
 $current_page = "analytics";
 
 // Include templates
-include_once '../../templates/header.php'; //navbar global style
+include_once '../../templates/header.php'; //navbar global cs style
 include_once '../../templates/navbar_directorate.php'; //navbar for alumini
 ?>
 

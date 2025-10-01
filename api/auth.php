@@ -1,27 +1,26 @@
 <?php
-// ATS/api/auth.php - Fixed version
 
-// Configure session security
-ini_set('session.cookie_httponly', 1);
-ini_set('session.cookie_secure', 0); // Set to 1 if using HTTPS
-ini_set('session.cookie_samesite', 'Lax');
-ini_set('session.use_strict_mode', 1);
+// Config session security
+// ini_set('session.cookie_httponly', 1);
+// ini_set('session.cookie_secure', 0); // Set to 1 if using HTTPS
+// ini_set('session.cookie_samesite', 'Lax');
+// ini_set('session.use_strict_mode', 1);
 
 session_start();
 
-// FIX 1: Set proper headers first, before any output
+// 1: Set proper headers first, before any output
 header('Content-Type: application/json; charset=utf-8');
 
-// FIX 2: For development, allow specific origin instead of *
-$allowed_origin = 'http://localhost';
-if (isset($_SERVER['HTTP_ORIGIN']) && strpos($_SERVER['HTTP_ORIGIN'], $allowed_origin) === 0) {
-    header('Access-Control-Allow-Origin: ' . $_SERVER['HTTP_ORIGIN']);
-}
-header('Access-Control-Allow-Methods: POST, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type, Authorization');
-header('Access-Control-Allow-Credentials: true');
+// // 2: For development, allow specific origin instead of *
+// $allowed_origin = 'http://localhost';
+// if (isset($_SERVER['HTTP_ORIGIN']) && strpos($_SERVER['HTTP_ORIGIN'], $allowed_origin) === 0) {
+//     header('Access-Control-Allow-Origin: ' . $_SERVER['HTTP_ORIGIN']);
+// }
+// header('Access-Control-Allow-Methods: POST, OPTIONS');
+// header('Access-Control-Allow-Headers: Content-Type, Authorization');
+// header('Access-Control-Allow-Credentials: true');
 
-// FIX 3: Error handling for database connection
+// 3: Error handling for database connection
 try {
     require_once __DIR__ . '/../config/database.php';
 } catch (Exception $e) {
@@ -38,7 +37,7 @@ if ($method === 'OPTIONS') {
     exit;
 }
 
-// FIX 4: Better error handling for invalid methods
+// 4:  error handling for invalid methods
 if ($method !== 'POST') {
     http_response_code(405);
     echo json_encode(['success' => false, 'message' => 'Only POST method allowed']);
@@ -60,7 +59,7 @@ if ($action === 'logout') {
     exit;
 }
 
-// FIX 5: Better JSON input handling
+// 5: Better JSON input handling
 $json_input = file_get_contents('php://input');
 if (empty($json_input)) {
     http_response_code(400);
@@ -101,14 +100,14 @@ if ($action === 'register') {
         $errors[] = "Passwords do not match";
     }
 
-    // FIX 6: Return errors early if validation fails
+    // 6: Return errors early if validation fails
     if (!empty($errors)) {
         http_response_code(422);
         echo json_encode(['success' => false, 'errors' => $errors, 'message' => 'Validation failed']);
         exit;
     }
 
-    // Sanitize fields
+    // Sanitize/preProcess fields
     $first_name = trim($input['first_name']);
     $last_name  = trim($input['last_name']);
     $email      = trim($input['email']);
@@ -121,7 +120,7 @@ if ($action === 'register') {
     $password = $input['password'];
 
     try {
-        // FIX 7: Check if $pdo exists
+        // 7: Check if $pdo exists
         if (!isset($pdo)) {
             throw new Exception('Database connection not available');
         }
@@ -142,13 +141,13 @@ if ($action === 'register') {
             throw new Exception('PRN number already registered');
         }
 
-        // Create user
+        // Creating.... user
         $hashed = password_hash($password, PASSWORD_DEFAULT);
         $stmt = $pdo->prepare("INSERT INTO users (email, password, role, status) VALUES (?, ?, 'alumni', 'pending')");
         $stmt->execute([$email, $hashed]);
         $user_id = $pdo->lastInsertId();
 
-        // Create alumni record
+        // Create alumni record....
         $stmt = $pdo->prepare("INSERT INTO alumni (user_id, prn_no, first_name, last_name, branch, passout_year, phone, employment_status, company_name) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->execute([$user_id, $prn_no, $first_name, $last_name, $branch, $passout_year, $phone, $employment_status, $company_name]);
 
@@ -252,7 +251,8 @@ if ($action === 'login') {
 
 
 
-// Unknown action
+
+// for handling.... Unknown action
 http_response_code(404);
 echo json_encode(['success' => false, 'message' => 'Unknown action: ' . $action]);
 ?>

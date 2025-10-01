@@ -14,7 +14,7 @@ include_once '../../templates/header.php'; //navbar global style
 include_once '../../templates/navbar_admin.php'; //navbar for alumini
 ?>
 
-<!-- Your page content here -->
+<!--  page content here -->
 <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
 <?php include '../../templates/manage_events.php'; ?>
 <script src="../../assets/js/manage_events.js"></script>
